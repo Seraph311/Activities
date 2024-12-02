@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Font Awesome Kit Script-->
+        <script src="https://kit.fontawesome.com/9d39f708e8.js" crossorigin="anonymous"></script>
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="style.css">
+        <!-- Materialize Icons-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <title>Navbar & Sidenav</title>
+    </head>
+    <body>
+        <div class="navbar-fixed">
+            <nav class="nav-extended">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo center"><i class="fa-regular fa-font-awesome"></i></a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fa-solid fa-bars"></i></a>
+                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        <li><a href="//x.com">Twitter</a></li>
+                        <li><a href="//google.com">Google</a></li>
+                        <li><a href="//stackoverflow.com">Stackoverflow</a></li>
+                        <li><a href="#" class="dropdown-trigger" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-content">
+                    <ul class="tabs tabs-transparent">
+                        <li class="tab"><a href="#test1">Test 1</a></li>
+                        <li class="tab"><a href="#test2">Test 2</a></li>
+                        <li class="tab"><a href="#test3">Test 3</a></li>
+                        <li class="tab"><a href="#test4">Test 4</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- Dropdown Structure -->
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="//x.com">Twitter</a></li>
+            <li><a href="//google.com">Google</a></li>
+            <li><a href="//stackoverflow.com">Stackoverflow</a></li>
+        </ul>
+
+        <h1 class="red-text center">Navbar</h1>
+        <div class="divider"></div>
+        <div class="container">
+            <br>
+            <p>The navbar is fully contained by an HTML5 Nav tag. Inside a recommended container div, there are 2 main parts of the navbar. A logo or brand link, and the navigations links. You can align these links to the left or right.</p>
+
+            <h3 class="red-text text-lighten-2">Right Aligned Links</h3>
+            <p>To right align your navbar links, just add a right class to your &lt;ul&gt; that contains them.</p>
+
+            <nav>
+                <div class="nav-wrapper">
+                    <div class="container">
+                        <a href="//youtube.com" class="brand-logo" target="_blank"><i class="fa-regular fa-font-awesome"></i></a>
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li><a href="//x.com">Twitter</a></li>
+                            <li><a href="//google.com">Google</a></li>
+                            <li><a href="//stackoverflow.com">Stackoverflow</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            
+            
+
+            <br>
+            <h3 class="red-text text-lighten-2">Left Aligned Links</h3>
+            <p>To left align your navbar links, just add a left class to your &lt;ul&gt; that contains them.</p>
+
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo right"><i class="fa-regular fa-font-awesome"></i></a>
+                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        <li><a href="//x.com">Twitter</a></li>
+                        <li><a href="//google.com">Google</a></li>
+                        <li><a href="//stackoverflow.com">Stackoverflow</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <br>
+            <h3 class="red-text text-lighten-2">Centering the logo</h3>
+            <p>The logo will center itself on medium and down screens, but if you want the logo to always be centered, add the center class to your &lt;a class="brand-logo"&gt;. You will have to make sure yourself that links do not overlap if you use this.</p>
+
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo center"><i class="fa-regular fa-font-awesome"></i></a>
+                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        <li><a href="//x.com">Twitter</a></li>
+                        <li><a href="//google.com">Google</a></li>
+                        <li><a href="//stackoverflow.com">Stackoverflow</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <br>
+            <h3 class="red-text text-ligten-2">Active Items</h3>
+            <p>Add active class to your li tags to denote the current page.</p>
+
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo center"><i class="fa-regular fa-font-awesome"></i></a>
+                    <ul class="left hide-on-med-and-down">
+                        <li><a href="//x.com">Twitter</a></li>
+                        <li><a href="//google.com">Google</a></li>
+                        <li class="active"><a href="//stackoverflow.com">Stackoverflow</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <br>
+            <h3 class="red-text text-lighten-2">Extended Navbar with Tabs</h3>
+            <p>
+                To add extended components to the navbar, add the class nav-extended to the outer nav tag. This will allow your navbar height to be variable. Then you can just include a tabs component inside the nav-wrapper.
+            </p>
+
+            <nav class="nav-extended">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo center"><i class="fa-regular fa-font-awesome"></i></a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fa-solid fa-bars"></i></a>
+                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        <li><a href="//x.com">Twitter</a></li>
+                        <li><a href="//google.com">Google</a></li>
+                        <li><a href="//stackoverflow.com">Stackoverflow</a></li>
+                    </ul>
+                </div>
+                <div class="nav-content">
+                    <ul class="tabs tabs-transparent">
+                        <li class="tab"><a href="#test1">Test 1</a></li>
+                        <li class="tab"><a href="#test2">Test 2</a></li>
+                        <li class="tab"><a href="#test3">Test 3</a></li>
+                        <li class="tab"><a href="#test4">Test 4</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Sidenav Structure-->
+             <ul class="sidenav" id="mobile-demo">
+                <li><a href="//x.com">Twitter</a></li>
+                <li><a href="//google.com">Google</a></li>
+                <li><a href="//stackoverflow.com">Stackoverflow</a></li>
+             </ul>
+
+            <!-- Tabs Sctructure -->
+            <div class="row">
+                <div id="test1" class="col s12">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1732530361158-09f4154b6b3b?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bird" class="responsive-image">
+                        </div>
+                    </div>
+                </div>
+                <div id="test2" class="col s12">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1486365227551-f3f90034a57c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bird" class="responsive-image">
+                        </div>
+                    </div>
+                </div>
+                <div id="test3" class="col s12">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1490718720478-364a07a997cd?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bird" class="responsive-image">
+                        </div>
+                    </div>
+                </div>
+                <div id="test4" class="col s12">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1520808663317-647b476a81b9?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bird" class="responsive-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <h3 class="red-text text-lighten-2">Fixed Navbar</h3>
+            <p>To make the navbar fixed, you have to add an outer wrapping div with the class navbar-fixed. This will offset your other content while making your nav fixed. You can adjust the height of this outer div to change how much offset is on your content.</p>
+
+            <br>
+            <h3 class="red-text text-lighten-2">Navbar Dropdown Menu</h3>
+            <p>To add a navbar dropdown menu, add the ul dropdown structure into the page. Then, add an element to trigger the dropdown menu. Make sure to supply the id of the dropdown structure to the data-target attribute of the dropdown trigger.</p>
+            
+            
+
+
+        </div>
+
+        <div style="height:100px;"></div>
+
+        <!--Jquery CDN-->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                
+                //tabs
+                $('.tabs').tabs();
+                //sidenav
+                $('.sidenav').sidenav({
+                    edge: 'right'
+                });
+                //dropdown
+                $('.dropdown-trigger').dropdown();
+
+        });
+        </script>
+
+    </body>
+</html>

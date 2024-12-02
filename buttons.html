@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Font Awesome Kit Script-->
+     <script src="https://kit.fontawesome.com/9d39f708e8.js" crossorigin="anonymous"></script>
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <!-- Custom CSS -->
+     <link rel="stylesheet" href="style.css">
+     <!-- Materialize Icons-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Buttons</title>
+</head>
+<body>
+    <h1 class="red-text center">Buttons</h1>
+    <div class="divider"></div>
+
+
+    <div class="container">
+
+        <p>
+            There are 3 main button types described in material design. The raised button is a standard button that signify actions and seek to give depth to a mostly flat page. The floating circular action button is meant for very important functions. Flat buttons are usually used within elements that already have depth like cards or modals.
+        </p>
+
+        <br>
+        <!-- Raised Button -->
+        <h3 class="red-text text-lighten-2">Raised</h3>
+        <a href="#" class="waves-effect waves-light btn yellow darken-2">button</a>
+        <a href="#" class="waves-effect waves-light btn green lighten-3"><i class="fa-solid fa-cloud-arrow-down left"></i> Button</a>
+        <a href="#" class="waves-effect waves-light btn red darken-4"><i class="fa-solid fa-cloud-arrow-up right"></i>Button </a>
+        <br>
+        <br>
+        <!-- Floating Button -->
+        <h3 class="red-text text-lighten-2">Floating</h3>
+        <a href="#" class="btn-floating btn-large waves-effect waves-light red"><i class="fa-solid fa-play"></i></a>
+        <br>
+        <br>
+        <!-- Flat Button -->
+         <h3 class="red-text text-lighten-2">Flat</h3>
+         <p>Flat buttons are used to reduce excessive layering. For example, flat buttons are usually used for actions within a card or modal so there aren't too many overlapping shadows.</p>
+         <a href="#" class="waves-effect waves-teal btn-flat">Button</a>
+        <br>
+        <br>
+        <!-- Submit Button -->
+        <h3 class="red-text text-lighten-2">Submit Button</h3>
+        <p>When you use a button to submit a form, instead of using a input tag, use a button tag with a type submit</p>
+        <button class="btn waves-effect waves-light blue lighten-4 black-text" type="submit" name="action">Submit <i class="fa-regular fa-paper-plane"></i>
+        </button>
+        <br>
+        <br>
+        <!-- Large Button -->
+        <h3 class="red-text text-lighten-2">Large</h3>
+        <p>This button has a larger height for buttons that need more attention.</p>
+        <a class="waves-effect waves-light btn-large yellow darken-2">button</a>
+        <a class="waves-effect waves-light btn-large green lighten-3"><i class="fa-solid fa-cloud-arrow-down left"></i> Button</a>
+        <a class="waves-effect waves-light btn-large red darken-4"><i class="fa-solid fa-cloud-arrow-up right"></i>Button </a>
+        <br>
+        <br>
+        <!-- Small Button -->
+        <h3 class="red-text text-lighten-2">Small</h3>
+        <p>When mouse and keyboard are the primary input methods, this smaller button is useful for denser UI layouts.</p>
+        <a class="waves-effect waves-light btn-small yellow darken-2">button</a>
+        <a class="waves-effect waves-light btn-small green lighten-3"><i class="fa-solid fa-cloud-arrow-down left"></i> Button</a>
+        <a class="waves-effect waves-light btn-small red darken-4"><i class="fa-solid fa-cloud-arrow-up right"></i>Button </a>
+        <br>
+        <br>
+        <!-- Disabled Button -->
+        <h3 class="red-text text-lighten-2">Disabled</h3>
+        <p>This style can be applied to all button types</p>
+        <a class="btn-large disabled">Button</a>
+        <a class="btn disabled">Button</a>
+        <a class="btn-flat disabled">Button</a>
+        <a href="#" class="btn-floating disabled"><i class="fa-solid fa-play"></i></a>
+        <br>
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- Floating Action Button -->
+    <h1 class="red-text center">Floating Action button</h1>
+    <div class="divider"></div>
+    <div class="container">
+        <p>If you want a fixed floating action button, you can add multiple actions that will appear on hover. Our demo is in the bottom righthand corner of the page.</p>
+         <div class="fixed-action-btn toolbar">
+            <a class="btn-floating btn-large red">
+                <i class="fa-solid fa-pen-nib"></i>
+            </a>
+            <ul>
+                <li><a href="navbar_sidenav.html" target="_blank" class="red"><i class="fa-solid fa-paperclip"></i></a></li>
+                <li><a href="//google.com" target="_blank"class="yellow lighten-2"><i class="fa-solid fa-scissors"></i></a></li>
+                <li><a href="//fontawesome.com" target="_blank"class="green lighten-2"><i class="fa-solid fa-share-from-square"></i></a></li>
+                <li><a href="//store.steampowered.com" target="_blank"class="blue darken-1"><i class="fa-solid fa-house"></i></a></li>
+            </ul>
+         </div>  
+         
+         
+    </div>
+
+
+    <div style="height: 100px;"></div>
+
+
+    <!--Jquery CDN-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+
+            //Floating Button Initialize
+            $('.fixed-action-btn').floatingActionButton({
+                //direction: 'left',
+                hoverEnabled: false,
+                toolbarEnabled: true
+                
+            });
+
+        })
+    </script>
+</body>
+</html>
